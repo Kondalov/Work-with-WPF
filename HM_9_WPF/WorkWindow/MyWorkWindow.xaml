@@ -228,11 +228,11 @@
                         <Button.Template>
                             <ControlTemplate TargetType="Button">
                                 <Border Width="150" Height="50"
-                CornerRadius="20"
-                Background="{TemplateBinding Background}">
+                                    CornerRadius="20"
+                                    Background="{TemplateBinding Background}">
                                     <ContentPresenter
-                VerticalAlignment="Center"
-                HorizontalAlignment="Center">
+                                        VerticalAlignment="Center"
+                                        HorizontalAlignment="Center">
                                     </ContentPresenter>
 
                                 </Border>
@@ -279,18 +279,16 @@
                 </StackPanel>
                 <!--Поле вывода результатов-->
                 <Border
-                Grid.Row="1"
-                Margin="278,243,282,14"
-                Width="220"
-                Opacity="0.7"
-                CornerRadius="10"               
-                >
-                    <ListBox
-                    x:Name="wordsListBox"
-                    FontSize="14"
-                    FontWeight="Medium"
-                    Margin="0,0,0,0">
-                    </ListBox>
+                    Grid.Row="1"
+                    Margin="278,243,282,14"
+                    Width="220"
+                    Opacity="0.7"
+                    CornerRadius="10">
+                        <ListBox
+                            x:Name="wordsListBox"
+                            FontSize="14"
+                            FontWeight="Medium">
+                        </ListBox>
                 </Border>
             </Grid>
         </Border>
