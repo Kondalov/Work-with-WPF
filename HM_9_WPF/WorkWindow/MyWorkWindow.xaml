@@ -279,17 +279,17 @@
                 </StackPanel>
                 <!--Поле вывода результатов-->
                 <Border
-            Grid.Row="1"
-            Margin="278,243,282,14"
-            Width="220"
-            Opacity="0.7"
-            CornerRadius="20"
-            BorderBrush="Gray"
-            BorderThickness="1">
+                    Grid.Row="1"
+                    Margin="278,243,282,14"
+                    Width="220"
+                    Opacity="0.7"
+                    CornerRadius="20"
+                    BorderBrush="Gray"
+                    BorderThickness="1">
                     <ListBox
-                x:Name="wordsListBox"
-                FontSize="16"
-                FontWeight="Medium">
+                        x:Name="wordsListBox"
+                        FontSize="14"
+                        FontWeight="Medium">
                         <ListBox.Style>
                             <Style TargetType="ListBox">
                                 <Setter Property="Template">
