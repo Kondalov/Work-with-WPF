@@ -95,6 +95,7 @@ namespace HM_9_WPF.WorkWindow
             }
 
             wordsListBox.Items.Clear();
+            reversedLabel.Content = string.Empty;
 
             //для TextBlock
             //wordsListBox.Inlines.Clear();
