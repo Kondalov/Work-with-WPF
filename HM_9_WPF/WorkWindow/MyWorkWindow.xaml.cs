@@ -123,12 +123,42 @@ namespace HM_9_WPF.WorkWindow
         {
             if (IsInputTextBoxEmpty(txtText))
             {
+
                 DisplayErrorMassege("Ввод не может быть пустым!!! ");
                 return;
 
             }
 
+            wordsListBox.Items.Clear();
+
+            string inputText = txtText.Text;
+
+            // переворачиваем слова
+            string reversedWord = ReverseWord(inputText);
+
+            // Делим слова
+            string[] words = reversedWord.Split(' ');
+
+            foreach (string word in words)
+            {
+                ListBoxItem item = new ListBoxItem
+                {
+                    Content = word,
+                    Foreground = new SolidColorBrush(Colors.Red)
+                };
+
+                wordsListBox.Items.Add(item);
+            }
+
         }
+
+        private string ReverseWord(string word)
+        {
+            char[] charArray = word.ToCharArray();
+            Array.Reverse(charArray);
+            return new string(charArray);
+        }
+
         public bool IsInputTextBoxEmpty(TextBox textBox)
         {
             return string.IsNullOrEmpty(textBox.Text);

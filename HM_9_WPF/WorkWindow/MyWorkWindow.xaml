@@ -59,7 +59,7 @@
                         <ColumnDefinition Width="20"/>
                     </Grid.ColumnDefinitions>
                     <!--Текстовая часть-->
-                    <TextBlock Text="KondaloFF"
+                    <TextBlock Text="SkillBox"
                            Opacity="70"
                            Foreground="DarkGray"
                            FontSize="20"
