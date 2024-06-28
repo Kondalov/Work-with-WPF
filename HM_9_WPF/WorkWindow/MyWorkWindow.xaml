@@ -279,15 +279,37 @@
                 </StackPanel>
                 <!--Поле вывода результатов-->
                 <Border
-                    Grid.Row="1"
-                    Margin="278,243,282,14"
-                    Width="220"
-                    Opacity="0.7"
-                    CornerRadius="10">
+            Grid.Row="1"
+            Margin="278,243,282,14"
+            Width="220"
+            Opacity="0.7"
+            CornerRadius="20"
+            BorderBrush="Gray"
+            BorderThickness="1">
                     <ListBox
-                            x:Name="wordsListBox"
-                            FontSize="14"
-                            FontWeight="Medium">
+                x:Name="wordsListBox"
+                FontSize="16"
+                FontWeight="Medium">
+                        <ListBox.Style>
+                            <Style TargetType="ListBox">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="ListBox">
+                                            <Border 
+                                        CornerRadius="20" 
+                                        BorderBrush="{TemplateBinding BorderBrush}" 
+                                        BorderThickness="{TemplateBinding BorderThickness}" 
+                                        Background="{TemplateBinding Background}">
+                                                <ScrollViewer 
+                                            Focusable="false">
+                                                    <ItemsPresenter />
+                                                </ScrollViewer>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </ListBox.Style>
                     </ListBox>
                 </Border>
                 <!--Для примера сделан вывод текста через Label-->
