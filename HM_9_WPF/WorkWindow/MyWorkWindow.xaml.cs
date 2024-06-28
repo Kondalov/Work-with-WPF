@@ -136,6 +136,8 @@ namespace HM_9_WPF.WorkWindow
             // переворачиваем слова
             string reversedWord = ReverseWord(inputText);
 
+            reversedLabel.Content = reversedWord;
+
             // Делим слова
             string[] words = reversedWord.Split(' ');
 

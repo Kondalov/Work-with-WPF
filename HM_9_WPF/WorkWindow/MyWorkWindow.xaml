@@ -284,12 +284,20 @@
                     Width="220"
                     Opacity="0.7"
                     CornerRadius="10">
-                        <ListBox
+                    <ListBox
                             x:Name="wordsListBox"
                             FontSize="14"
                             FontWeight="Medium">
-                        </ListBox>
+                    </ListBox>
                 </Border>
+                <!--Для примера сделан вывод текста через Label-->
+                <Label
+                    x:Name="reversedLabel"
+                    Grid.Row="1"
+                    Margin="58,245,510,18"
+                    Foreground="Red"
+                    FontSize="20">
+                </Label>
             </Grid>
         </Border>
     </Border>
