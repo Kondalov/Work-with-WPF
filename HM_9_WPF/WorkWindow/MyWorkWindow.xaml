@@ -293,10 +293,12 @@
                 <!--Для примера сделан вывод текста через Label-->
                 <Label
                     x:Name="reversedLabel"
-                    Grid.Row="1"
-                    Margin="58,245,510,18"
+                    Grid.Row="2"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Margin="33,5,28,392"
                     Foreground="Red"
-                    FontSize="20">
+                    FontSize="16">
                 </Label>
             </Grid>
         </Border>
