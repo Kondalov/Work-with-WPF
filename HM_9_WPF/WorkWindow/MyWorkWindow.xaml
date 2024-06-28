@@ -188,7 +188,10 @@
                     VerticalAlignment="Bottom"
                     BorderThickness="1"
                     Cursor="Hand"
-                    Click="buttonClearClick">
+                    Click="buttonClearClick"
+                    ToolTip="Очистить все поля"
+                    ToolTipService.Placement="Relative"
+                    ToolTipService.PlacementRectangle="0,-40,120,0">
                     <Button.Style>
                         <Style TargetType="Button">
                             <Setter Property="Background" Value="#28Aeed"/>
