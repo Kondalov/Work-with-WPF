@@ -190,5 +190,15 @@ namespace HM_9_WPF.WorkWindow
             //для TextBlock
             //wordsListBox.Inlines.Add(errorItem);
         }
+
+        private void buttonClearClick(object sender, RoutedEventArgs e)
+        {
+
+            txtText.Clear();
+
+            wordsListBox.Items.Clear();
+
+            reversedLabel.Content = string.Empty;
+        }
     }
 }
