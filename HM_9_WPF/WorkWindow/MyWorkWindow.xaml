@@ -296,12 +296,12 @@
                                     <Setter.Value>
                                         <ControlTemplate TargetType="ListBox">
                                             <Border 
-                                        CornerRadius="20" 
-                                        BorderBrush="{TemplateBinding BorderBrush}" 
-                                        BorderThickness="{TemplateBinding BorderThickness}" 
-                                        Background="{TemplateBinding Background}">
+                                                CornerRadius="20" 
+                                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                                Background="{TemplateBinding Background}">
                                                 <ScrollViewer 
-                                            Focusable="false">
+                                                    Focusable="false">
                                                     <ItemsPresenter />
                                                 </ScrollViewer>
                                             </Border>
